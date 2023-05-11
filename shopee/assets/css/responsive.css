@@ -1,0 +1,128 @@
+/* Mobile && tablet */
+@media (max-width:1023px){
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+    .header{
+        position: fixed;
+        padding-top: 16px;
+        height: 68px;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .header__search{
+        margin-left: -4px;
+    }
+    .header__cart-list{
+        position: fixed;
+        right: 0;
+        top: 68px;
+        width: 100%;
+        padding: 0 calc(( 100% - 644px ) / 2);
+    }
+    .header__cart-list::before{
+        display: none;
+    }
+    .app__container{
+        margin-top: 104px;
+    }
+    .header__sort-bar{
+        display: flex;
+    }
+    .app__container--pad{
+        padding-top: 20px;
+    }
+}
+
+/* Tablet */
+@media (min-width:740px) and (max-width: 1023px){
+    .hide-on-tablet{
+        display: none;
+    }
+    .header__cart {
+        display: flex;
+        justify-content: flex-end;
+        width: 60px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px){
+    .hide-on-mobile{
+        display: none;
+    }
+    .header{
+        padding: 5px;
+    }
+    .header-with-search{
+        justify-content: space-between;
+    }
+    .header__logo{
+        width: unset;
+        margin-top: 8px;
+    }
+    .header__cart{
+        width: unset;
+        margin-right: 8px;
+    }
+    .header__search{
+        margin: 0 1px;
+        position: fixed;
+        top: 68px;
+        right: 0;
+        left: 0;
+        height: 46px;
+        border: 4px double #e5e5e5;
+        box-shadow: 0 1px 2px rgb(0, 0, 0, 5%);
+        transform-origin: 5% top;
+        animation: fadeInMobile 0.1s ease;
+        display: none;
+    }
+    @keyframes fadeInMobile{
+        from{
+            transform: scale(0.5);
+        }
+        to{
+            transform: scale(1);
+        }
+    }
+    .header__search-history{
+        position: fixed;
+        left: 0;
+        top: 112px;
+        width: 100%;
+        box-shadow: 0 1px 2px rgb(0, 0, 0, 0.1);
+    }
+    .pagination-item__link{
+        font-size: 1.6rem;
+        min-width: 20px;
+        height: 22px;
+    }
+    .app__container--pad{
+        margin: 0 4px;
+    }
+    .mobile-category{
+        display: block;
+    }
+    .header-mobile-search{
+        display: block;
+    }
+    .header__logo-shopee{
+        width: 100px;
+    }
+    .footer{
+        padding-top: 20px;
+    }
+    .footer__support{
+        margin-left: 20px;
+    }
+}
+
+/* PC */
+@media (min-width: 1024px){
+    .hide-on-pc{
+        display: none;
+    }
+}
